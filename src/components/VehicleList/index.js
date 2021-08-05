@@ -14,6 +14,12 @@ export default function VehicleList() {
     return <div data-testid="error">{ error }</div>;
   }
 
+  if (!vehicles) {
+    return <div data-testid="fail-loading">Loading</div>;
+  } else {
+    console.log(vehicles)
+  }
+
   return (
     <div data-testid="results">
       <p>List of vehicles will be displayed here</p>
