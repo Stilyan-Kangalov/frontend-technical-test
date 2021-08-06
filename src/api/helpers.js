@@ -5,5 +5,5 @@
  * @return {Promise<Object>}
  */
 export async function request(apiUrl) {
-  return fetch(apiUrl);
+  return fetch(apiUrl).then((data) => data.json());
 }
