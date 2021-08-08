@@ -19,6 +19,6 @@ export default async function getData() {
     ...vehicle,
     price: vehicleProps[index].price ? vehicleProps[index].price : null,
     description: vehicleProps[index].description ? vehicleProps[index].description : null,
-    meta: vehicleProps[index].meta
+    meta: vehicleProps[index].meta ? vehicleProps[index].meta : null
   }));
 }

@@ -1,3 +1,89 @@
-.VehicleList {
-  width: 100%;
+.row {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    @media screen and (min-width: 1560px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.column {
+    width: 100vw;
+
+    @media screen and (min-width: 1000px) {
+        width: 50vw;
+    }
+}
+
+img {
+    max-width: 100%;
+    float: left;
+    display: flex;
+    margin-bottom: 35px;
+
+    &:hover {
+        -webkit-filter: brightness(0.6);
+        filter: brightness(0.6);
+    }
+
+    @media screen and (min-width: 460px) {
+        max-width: 180px;
+        max-height: 174px;
+        margin-right: 35px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1000px) {
+        max-width: none;
+        max-height: none;
+        margin-right: auto;
+        min-width: 100%;
+    }
+}
+
+.main-part {
+    padding: 30px;
+    text-align: center;
+
+    @media screen and (min-width: 460px) {
+        text-align: left;
+        border-bottom: 1px solid #cccccc6e;
+    }
+
+    @media screen and (min-width: 1000px) {
+        text-align: center;
+        border: 1px solid #cccccc6e;
+    }
+}
+
+.car-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 22px;
+
+    @media screen and (min-width: 1000px) {
+        border: 1px solid #0c121c;
+        border-style: solid none;
+        margin-top: 3.6vw;
+        display: inline-flex;
+    }
+
+    @media screen and (min-width: 1560px) {
+        margin-top: 2.4vw;
+    }
+}
+
+.car-desc {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
 }
