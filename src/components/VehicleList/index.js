@@ -15,9 +15,9 @@ export default function VehicleList() {
         return <div data-testid="error">{error}</div>;
     }
 
-    if (vehicles) {
+    /* if (vehicles) {
         console.log(vehicles);
-    }
+    } */
 
     return (
         <div data-testid="results" id="vehicle-list">

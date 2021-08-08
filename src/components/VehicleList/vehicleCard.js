@@ -7,19 +7,25 @@ let VehicleCard = ({ media, name, price, description }) => {
             <MainImage media={media} name={name} />
             <div className="main-part">
                 {name && (
-                    <h1 className="car-title" data-testid="test-card--title">
+                    <h1
+                        className="car-title"
+                        data-testid="test-vehicle-card--title"
+                    >
                         {`Jaguar ${name}`}
                     </h1>
                 )}
                 {price && (
-                    <p className="car-price" data-testid="test-card--price">
+                    <p
+                        className="car-price"
+                        data-testid="test-vehicle-card--price"
+                    >
                         From {price}
                     </p>
                 )}
                 {description && (
                     <p
                         className="car-desc"
-                        data-testid="test-card--description"
+                        data-testid="test-vehicle-card--description"
                     >
                         {description}
                     </p>
