@@ -1,5 +1,39 @@
-.root {
-  margin: 14px;
-  padding: 12px;
-  z-index: 12;
+$font-stack: Verdana, Geneva, sans-serif;
+$font-size: 18px;
+$font-weight: 600;
+$p-weight: 400;
+$h1-color: #0c121c;
+$p-color: #4a4f54;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: $font-size;
+    animation: fadeIn 1.5s;
+
+    h1 {
+        color: $h1-color;
+        font-weight: $font-weight;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $p-color;
+        font-weight: $p-weight;
+        margin: 0 0 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
