@@ -29,8 +29,18 @@ img {
     margin-bottom: 35px;
 
     &:hover {
-        -webkit-filter: brightness(0.6);
-        filter: brightness(0.6);
+        animation: change 2s forwards;
+    }
+
+    @keyframes change {
+        0% {
+            filter: brightness(1);
+            -webkit-filter: brightness(1);
+        }
+        100% {
+            filter: brightness(0.4);
+            -webkit-filter: brightness(0.4);
+        }
     }
 
     @media screen and (min-width: 460px) {
