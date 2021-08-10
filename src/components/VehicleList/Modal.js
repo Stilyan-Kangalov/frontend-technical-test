@@ -32,7 +32,7 @@ const Modal = ({
                           </thead>
                           <tbody>
                               <tr>
-                                  <td>Price</td>
+                                  <td>Price (from)</td>
                                   <td
                                       className="modal-props"
                                       data-testid="test-modal--price"
