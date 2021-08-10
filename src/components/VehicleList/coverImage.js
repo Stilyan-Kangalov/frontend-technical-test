@@ -1,8 +1,8 @@
 import React from "react";
 
-let MainImage = ({ media, name }) => {
+let MainImage = ({ media, name, toggle }) => {
     return (
-        <div className="image-container">
+        <div className="image-container" onClick={toggle}>
             <picture>
                 <source media="(min-width: 1000px)" srcSet={media[0].url} />
                 <img

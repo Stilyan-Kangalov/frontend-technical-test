@@ -1,0 +1,86 @@
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #327a81;
+    color: #f7f7f7;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    text-align: center;
+    background-color: #327a81;
+    color: white;
+
+    tr td {
+        color: #fff;
+    }
+}
+
+tfoot tr:hover {
+    background-color: #285c61 !important;
+    cursor: pointer;
+}
+
+.modal {
+    z-index: 999;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.modal-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+        color: #616161;
+    }
+
+    td,
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+}
+
+.modal-pop {
+    background: #fff;
+    z-index: 999;
+    max-width: 420px;
+    margin: auto;
+    position: relative;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #000;
+    opacity: 0.75;
+}
+
+.modal-emissions {
+    text-align: center;
+    color: #ab0c0c;
+}
+
+.modal-props {
+    text-align: right;
+}

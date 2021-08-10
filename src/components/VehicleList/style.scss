@@ -8,6 +8,11 @@
         justify-content: start;
     }
 
+    @media screen and (min-width: 1000px) and (max-width: 1560px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     @media screen and (min-width: 1560px) {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -28,21 +33,6 @@ img {
     display: flex;
     margin-bottom: 35px;
 
-    &:hover {
-        animation: change 2s forwards;
-    }
-
-    @keyframes change {
-        0% {
-            filter: brightness(1);
-            -webkit-filter: brightness(1);
-        }
-        100% {
-            filter: brightness(0.4);
-            -webkit-filter: brightness(0.4);
-        }
-    }
-
     @media screen and (min-width: 460px) {
         max-width: 180px;
         max-height: 174px;
@@ -55,6 +45,22 @@ img {
         max-height: none;
         margin-right: auto;
         min-width: 100%;
+    }
+}
+
+picture:hover img {
+    animation: change 1s forwards;
+    cursor: pointer;
+
+    @keyframes change {
+        0% {
+            filter: brightness(1);
+            -webkit-filter: brightness(1);
+        }
+        100% {
+            filter: brightness(0.4);
+            -webkit-filter: brightness(0.4);
+        }
     }
 }
 

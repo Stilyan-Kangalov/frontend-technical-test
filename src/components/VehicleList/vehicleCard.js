@@ -1,10 +1,24 @@
 import React from "react";
 import MainImage from "./coverImage";
+import Modal from "./Modal";
+import useModal from "./useModal";
 
-let VehicleCard = ({ media, name, price, description }) => {
+let VehicleCard = ({
+    media,
+    name,
+    price,
+    description,
+    model,
+    bodystyles,
+    drivetrain,
+    seats,
+    emissions,
+}) => {
+    const { toggle, visible } = useModal();
+
     return (
         <div className="car-card" data-testid="test-vehicle-card">
-            <MainImage media={media} name={name} />
+            <MainImage media={media} name={name} toggle={toggle} />
             <div className="main-part">
                 {name && (
                     <h1
@@ -31,6 +45,19 @@ let VehicleCard = ({ media, name, price, description }) => {
                     </p>
                 )}
             </div>
+            <>
+                <Modal
+                    visible={visible}
+                    toggle={toggle}
+                    name={name}
+                    price={price}
+                    model={model}
+                    bodystyles={bodystyles}
+                    drivetrain={drivetrain}
+                    seats={seats}
+                    emissions={emissions}
+                />
+            </>
         </div>
     );
 };

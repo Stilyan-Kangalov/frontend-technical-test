@@ -15,10 +15,6 @@ export default function VehicleList() {
         return <div data-testid="error">{error}</div>;
     }
 
-    /* if (vehicles) {
-        console.log(vehicles);
-    } */
-
     return (
         <div data-testid="results" id="vehicle-list">
             <div className="row">
@@ -31,6 +27,11 @@ export default function VehicleList() {
                                 name={car.id}
                                 price={car.price}
                                 description={car.description}
+                                model={car.modelYear}
+                                bodystyles={car.meta.bodystyles}
+                                drivetrain={car.meta.drivetrain}
+                                seats={car.meta.passengers}
+                                emissions={car.meta.emissions.value}
                             />
                         </div>
                     ))}
