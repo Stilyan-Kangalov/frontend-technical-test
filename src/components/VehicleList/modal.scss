@@ -1,10 +1,14 @@
+$background-modal: #327a81;
+$text-fix: center;
+$base-color: #fff;
+
 h3 {
-    text-align: center;
+    text-align: $text-fix;
     text-transform: uppercase;
     letter-spacing: 3px;
     border: 1px solid #ddd;
     padding: 5px;
-    background-color: #327a81;
+    background-color: $background-modal;
     color: #f7f7f7;
 }
 
@@ -13,12 +17,12 @@ thead {
 }
 
 tfoot {
-    text-align: center;
-    background-color: #327a81;
-    color: white;
+    text-align: $text-fix;
+    background-color: $background-modal;
+    color: $base-color;
 
     tr td {
-        color: #fff;
+        color: $base-color;
     }
 }
 
@@ -58,7 +62,7 @@ tfoot tr:hover {
 }
 
 .modal-pop {
-    background: #fff;
+    background: $base-color;
     z-index: 999;
     max-width: 420px;
     margin: auto;
@@ -77,7 +81,7 @@ tfoot tr:hover {
 }
 
 .modal-emissions {
-    text-align: center;
+    text-align: $text-fix;
     color: #ab0c0c;
 }
 
